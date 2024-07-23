@@ -3,16 +3,8 @@ defmodule OpentelemetryPhoenixchannel do
   Documentation for `OpentelemetryPhoenixchannel`.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> OpentelemetryPhoenixchannel.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  @spec setup() :: :ok
+  def setup() do
+    OpentelemetryPhoenixchannel.Handler.attach()
   end
 end
