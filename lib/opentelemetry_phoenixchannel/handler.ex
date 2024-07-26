@@ -1,4 +1,6 @@
 defmodule OpentelemetryPhoenixchannel.Handler do
+  @moduledoc false
+
   require OpenTelemetry.Tracer
   alias OpenTelemetry.Tracer
 
