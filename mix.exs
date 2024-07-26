@@ -7,7 +7,9 @@ defmodule OpentelemetryPhoenixchannel.MixProject do
       version: "0.1.0",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      name: "Opentelemetry PhoenixChannel",
+      deps: deps(),
+      package: package()
     ]
   end
 
@@ -15,6 +17,17 @@ defmodule OpentelemetryPhoenixchannel.MixProject do
   def application do
     [
       extra_applications: [:logger]
+    ]
+  end
+
+  defp package do
+    [
+      description: "OpenTelemetry tracing for the Phoenix.Channels",
+      files: ~w(lib .formatter.exs mix.exs README* LICENSE*),
+      licenses: ["MIT"],
+      links: %{
+        "GitHub" => "https://github.com/h3poteto/opentelemetry_phoenixchannel"
+      }
     ]
   end
 
