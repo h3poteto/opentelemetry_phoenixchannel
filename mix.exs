@@ -37,7 +37,7 @@ defmodule OpentelemetryPhoenixchannel.MixProject do
       {:telemetry, "~> 0.4 or ~> 1.0"},
       {:opentelemetry, "~> 1.0"},
       {:opentelemetry_telemetry, "~> 1.0"},
-      {:ex_doc, "~> 0.34", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.40", only: :dev, runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
     ]
   end
