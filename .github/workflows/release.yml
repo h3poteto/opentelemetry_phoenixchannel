@@ -13,7 +13,7 @@ jobs:
     - uses: erlef/setup-beam@v1
       with:
         otp-version: "27.0"
-        elixir-version: "1.17" # [Required] Define the Erlang/OTP version
+        elixir-version: "1.20" # [Required] Define the Erlang/OTP version
     - name: Restore dependencies cache
       uses: actions/cache@v4
       with:
